@@ -1,0 +1,135 @@
+.background-dark {
+  background-color: black;
+}
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.aos-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    z-index: 1050;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .collapse.show#sidebar {
+    transform: translateX(0);
+  }
+
+  .navbar-collapse {
+    display: none !important;
+  }
+}
+
+.navbar-nav .nav-link {
+  padding: 1rem 1.5rem;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2855, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.font-barlow {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+}
+.carousel-control-prev {
+  left: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 20px;
+}
+.carousel-control-next {
+  right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.font-service {
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 150;
+  font-style: normal;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-tabs .nav-link {
+  color: #ffffff; /* warna teks tombol */
+  border-color: #6c757d; /* warna border tombol */
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+  color: #ffffff; /* warna teks tombol aktif dan saat hover */
+  background-color: #343a40; /* warna latar belakang tombol aktif dan saat hover */
+  border-color: #343a40; /* warna border tombol aktif dan saat hover */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: #343a40; /* warna border tombol saat aktif */
+}
