@@ -59,7 +59,6 @@
   </head>
 
   <style>
-    /* Tambahkan ini ke CSS kamu */
     .card-img {
       outline: none !important;
       box-shadow: none !important;
@@ -119,11 +118,14 @@
                   <a class="nav-link text-white" href="branch.html">Branch</a>
                 </li>
                 <!-- Login & Login Button -->
-                <li class="nav-item hvr-underline-from-center">
-                  <a class="nav-link text-white " href="login.html">Login</a>
-                </li>
-                <li class="nav-item hvr-underline-from-center">
-                  <a class="nav-link text-white " href="login.html">Logout</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"  style="color: white;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user-circle" style="color: white; font-size: 1.5rem;"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -215,8 +217,9 @@
           >
         </div>
       </div>
+      <!-- end header -->
     </section>
-    <!-- end header -->
+    
 
     <!-- Service Section -->
     <section id="services" class="py-5 background-dark">
@@ -453,7 +456,7 @@
       </div>
     </section>
     <!-- end about-us -->
-
+     
     <!-- footer -->
     <footer class="background-dark py-5 d-flex justify-content-center align-items-center">
       <div class="container">

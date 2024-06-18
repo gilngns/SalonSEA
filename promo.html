@@ -65,7 +65,7 @@
   <body>
     <section id="header">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg background-dark">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -111,11 +111,14 @@
                 <a class="nav-link text-white" href="branch.html">Branch</a>
               </li>
               <!-- Login & Login Button -->
-              <li class="nav-item hvr-underline-from-center">
-                <a class="nav-link text-white" href="login.html">Login</a>
-              </li>
-              <li class="nav-item hvr-underline-from-center">
-                <a class="nav-link text-white" href="login.html">Logout</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  style="color: white;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-user-circle" style="color: white; font-size: 1.5rem;"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                </ul>
               </li>
             </ul>
           </div>
